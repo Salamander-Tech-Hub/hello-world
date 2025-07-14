@@ -1,0 +1,182 @@
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Geist', Arial, sans-serif;
+    background: #F6F4F0;
+    color: #000000; 
+}
+
+/* Navbar */
+.navbar {
+    background: #000000; 
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+/* Main content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 2rem;
+}
+
+.salamander-logo {
+    width: 200px;
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    background: #F6F4F0;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    padding: 2.5rem 2rem;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.card h1 {
+    color: #000000;
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: #FFED00; 
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.content p {
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background: #FFED00;
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    transition: background 0.2s;
+    position: relative;
+}
+
+.cta-button:hover {
+    background: #e6d800;
+}
+
+.cta-button a {
+    color: inherit;
+    text-decoration: none;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+/* Quote Section */
+.dev-quote {
+    font-style: italic;
+    color: #000000;
+    background: #e6d800;
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    display: inline-block;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    min-height: 2.5em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* Footer */
+.footer {
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    color: #000000;
+    opacity: 0.7;
+}
+
+/* Responsiveness */
+@media (max-width: 900px) {
+    .main-content {
+        padding: 1.5rem;
+    }
+    .card {
+        max-width: 90vw;
+        padding: 2rem 1rem;
+    }
+    .salamander-logo {
+        width: 120px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-content {
+        padding: 1rem;
+    }
+    .card {
+        padding: 1.2rem 0.7rem;
+        max-width: 98vw;
+    }
+    .salamander-logo {
+        width: 80px;
+    }
+    .card h1 {
+        font-size: 1.5rem;
+    }
+    .subtitle {
+        font-size: 1rem;
+    }
+    .content p {
+        font-size: 0.98rem;
+    }
+    .cta-button {
+        font-size: 0.95rem;
+        padding: 0.7rem 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .card {
+        padding: 1.2rem 0.7rem;
+    }
+    .main-content {
+        padding: 1rem;
+    }
+    .salamander-logo {
+        width: 60px;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-content {
+        padding: 0.5rem;
+    }
+    .card {
+        padding: 0.7rem 0.3rem;
+    }
+    .salamander-logo {
+        width: 50px;
+    }
+    .card h1 {
+        font-size: 1.1rem;
+    }
+}
