@@ -1,0 +1,144 @@
+/* Modern CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Geist', sans-serif;
+    background-color: #F6F4F0;
+    color: #000000;
+    min-height: 100vh;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #000000;
+    width: 100%;
+}
+
+.logo {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 35px;
+    width: auto;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 70px);
+    padding: 40px;
+}
+
+.salamander-logo {
+    margin-bottom: 60px;
+    width: auto;
+    height: 80px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    color: #000000;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.subtitle {
+    color: #636e72;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.content {
+    margin: 30px 0;
+}
+
+.content p {
+    color: #2d3436;
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.cta-button {
+    background-color: #000000;
+    color: #FFED00;
+    border: none;
+    padding: 15px 50px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 30px 0;
+    transition: all 0.3s ease;
+    font-family: 'Geist', sans-serif;
+}
+
+.cta-button:hover {
+    background-color: #FFED00;
+    color: #000000;
+}
+
+.footer {
+    margin-top: 20px;
+    color: #636e72;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+    
+    .main-content {
+        padding: 20px;
+    }
+    
+    .salamander-logo {
+        height: 60px;
+        margin-bottom: 40px;
+    }
+    
+    .card {
+        padding: 30px 20px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    .content p {
+        font-size: 1rem;
+    }
+    
+    .cta-button {
+        padding: 12px 40px;
+        font-size: 14px;
+    }
+} 
